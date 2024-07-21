@@ -19,7 +19,10 @@ const ShortPost = React.forwardRef(function ShortPost({ doc, ...rest }, ref) {
         <div className="profileImage">
           <Link to={`/profile?email=${doc.owner.email}`}>
             <img
-              src={doc?.owner?.profileImage || "Assets/user-profile.svg"}
+              src={
+                doc?.owner?.profileImage ||
+                "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
+              }
               alt=""
               className="size-10 transition-all object-cover ease-in-out rounded-full hover:scale-110 hover:ease-linear"
             />
