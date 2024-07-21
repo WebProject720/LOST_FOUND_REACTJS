@@ -111,7 +111,7 @@ const Header = () => {
               <button type="button" onClick={cancelSearchEvent}>
                 <img
                   className="size-10 pr-1"
-                  src="Assets\cancel-svgrepo-com.svg"
+                  src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/cancel-svgrepo-com.svg"
                   alt="CancelIcon"
                 />
               </button>
@@ -123,7 +123,7 @@ const Header = () => {
             >
               <img
                 className="size-10"
-                src="Assets\search-svgrepo-com.svg"
+                src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/search-svgrepo-com.svg"
                 alt="SearchIcon"
               />
             </button>
@@ -141,7 +141,7 @@ const Header = () => {
           >
             <img
               className="size-10"
-              src="Assets\search-svgrepo-com.svg"
+              src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/search-svgrepo-com.svg"
               alt="SearchIcon"
             />
           </button>
@@ -169,14 +169,14 @@ const Header = () => {
               >
                 <img
                   className="size-10"
-                  src="Assets\notification-bell-svgrepo-com.svg"
+                  src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/notification-bell-svgrepo-com.svg"
                   alt="Notification"
                 />
               </NavLink>
               <NavLink to={"/addpost"}>
                 <img
                   className="size-10"
-                  src="Assets\content-tag-add-icon-svgrepo-com.svg"
+                  src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/content-tag-add-icon-svgrepo-com.svg"
                   alt="Add Post"
                 />
               </NavLink>
@@ -185,7 +185,7 @@ const Header = () => {
                 <NavLink to={`/profile?email=${LoggedUser?.email}`}>
                   <img
                     className="size-10 rounded-full object-cover"
-                    src={LoggedUser?.profileImage || "Assets/user-profile.svg"}
+                    src={LoggedUser?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
                     alt="Profile"
                   />
                 </NavLink>

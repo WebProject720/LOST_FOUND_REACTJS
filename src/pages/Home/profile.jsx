@@ -79,7 +79,7 @@ export const Profile = () => {
           <div className="flex w-full flex-col justify-between laptop:w-3/5 items-start gap-3">
             <div className="w-full flex justify-center items-center">
               <img
-                src={currentUser.profileImage || "Assets/user-profile.svg"}
+                src={currentUser.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
                 className="size-40 rounded-full border-white border-4 object-cover"
                 alt="error"
               />

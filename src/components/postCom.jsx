@@ -105,7 +105,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                     <img
                       src={
                         (owner && owner.profileImage) ||
-                        "Assets/user-profile.svg"
+                        "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
                       }
                       className="size-10 rounded-full object-cover"
                       alt="Profile"
@@ -180,7 +180,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                   <div className="col-span-1 flex justify-center">
                     <img
                       className="h-10 rounded-full object-cover "
-                      src={e?.profileImage || "Assets/user-profile.svg"}
+                      src={e?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
                       alt=""
                     />
                   </div>
@@ -218,7 +218,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                   <img
                     className="size-10 object-cover rounded-full"
                     src={
-                      user.LoggedUser?.profileImage || "Assets/user-profile.svg"
+                      user.LoggedUser?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
                     }
                     alt=""
                   />
