@@ -174,7 +174,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                   "
                   key={e._id}
                 >
-                  <div className="col-span-1  flex justify-center">
+                  <div className="col-span-2  flex justify-center">
                     <img
                       className="size-10 Max650:size-8 rounded-full object-cover "
                       src={
@@ -184,12 +184,12 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                       alt=""
                     />
                   </div>
-                  <div className="col-span-11">
+                  <div className="col-span-10">
                     <div className="flex flex-row gap-2 text-xs">
                       <Link to={`/profile?email=${e.user}`}>
                         <span>{e.user}</span>
                       </Link>
-                      <span>
+                      <span className="flex flex-wrap gap-1">
                         {new Date(e.createdAt).toLocaleDateString()} ,{" "}
                         {new Date(e.createdAt)
                           .toLocaleTimeString([], {

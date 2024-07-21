@@ -160,9 +160,9 @@ export const Profile = () => {
             </div>
           </div>
           <div className="posts w-full">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <span className="text-2xl py-4 text-left laptop:w-3/5">
-                {currentUser && currentUser.sendMails.length>0 ?"Your Posts :" : <NoPost/>}
+                {currentUser && currentUser.sendMails.length>0 ?" Posts :" : <NoPost/>}
               </span>
             </div>
             <div className=" flex flex-col flex-nowrap gap-2 justify-center items-center">
