@@ -214,7 +214,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                 className="grid grid-flow-col grid-cols-12 p-2 items-center gap-2"
                 onSubmit={handleSubmit(sendReply)}
               >
-                <div className="col-span-1 flex justify-center">
+                <div className="col-span-2 flex justify-center">
                   <img
                     className="size-10 object-cover rounded-full"
                     src={
@@ -224,14 +224,14 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                     alt=""
                   />
                 </div>
-                <div className="col-span-9">
+                <div className="col-span-8">
                   <Input
                     {...register("msg", { required: true })}
                     placeholder="Reply"
                     required
                   ></Input>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 flex flex-wrap">
                   <Button type="submit" text="Post"></Button>
                 </div>
               </form>

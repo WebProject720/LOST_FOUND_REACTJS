@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router";
 import userApi from "../../APIs/users.api";
-import { Button, ShortPost, ShowAlertMsg,NoPost } from "../../components/components";
+import {
+  Button,
+  ShortPost,
+  ShowAlertMsg,
+  NoPost,
+} from "../../components/components";
 import { login } from "../../ReduxStore/StoreComponents/LoggedUser";
 
 export const Profile = () => {
@@ -48,8 +53,8 @@ export const Profile = () => {
         navigate("/");
       }
       setCurrentUser(res.data);
+      setAlert(false);
     });
-    setAlert(false);
   }, [LoggedUser, email]);
 
   const updateImage = (e) => {
@@ -79,7 +84,10 @@ export const Profile = () => {
           <div className="flex w-full flex-col justify-between laptop:w-3/5 items-start gap-3">
             <div className="w-full flex justify-center items-center">
               <img
-                src={currentUser.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
+                src={
+                  currentUser.profileImage ||
+                  "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
+                }
                 className="size-40 rounded-full border-white border-4 object-cover"
                 alt="error"
               />
@@ -162,7 +170,11 @@ export const Profile = () => {
           <div className="posts w-full">
             <div className="flex justify-start">
               <span className="text-2xl py-4 text-left laptop:w-3/5">
-                {currentUser && currentUser.sendMails.length>0 ?" Posts :" : <NoPost/>}
+                {currentUser && currentUser.sendMails.length > 0 ? (
+                  " Posts :"
+                ) : (
+                  <NoPost />
+                )}
               </span>
             </div>
             <div className=" flex flex-col flex-nowrap gap-2 justify-center items-center">
