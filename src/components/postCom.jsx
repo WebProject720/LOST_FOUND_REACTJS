@@ -4,13 +4,10 @@ import { Input, Button, ShowAlertMsg } from "./components";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import postApi from "../APIs/mails.api";
-import {
-  updatePost,
-} from "../ReduxStore/StoreComponents/PostStore";
+import { updatePost } from "../ReduxStore/StoreComponents/PostStore";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-import {deletePostfromUser} from '../ReduxStore/StoreComponents/LoggedUser'
-
+import { deletePostfromUser } from "../ReduxStore/StoreComponents/LoggedUser";
 
 export const Post = React.forwardRef(function Post({ doc }, ref) {
   const navigate = useNavigate();
@@ -177,10 +174,13 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                   "
                   key={e._id}
                 >
-                  <div className="col-span-1 flex justify-center">
+                  <div className="col-span-1  flex justify-center">
                     <img
-                      className="h-10 rounded-full object-cover "
-                      src={e?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
+                      className="size-10 Max650:size-8 rounded-full object-cover "
+                      src={
+                        e?.profileImage ||
+                        "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
+                      }
                       alt=""
                     />
                   </div>
@@ -218,7 +218,8 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
                   <img
                     className="size-10 object-cover rounded-full"
                     src={
-                      user.LoggedUser?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
+                      user.LoggedUser?.profileImage ||
+                      "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
                     }
                     alt=""
                   />

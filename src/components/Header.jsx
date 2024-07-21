@@ -185,7 +185,10 @@ const Header = () => {
                 <NavLink to={`/profile?email=${LoggedUser?.email}`}>
                   <img
                     className="size-10 rounded-full object-cover"
-                    src={LoggedUser?.profileImage || "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"}
+                    src={
+                      LoggedUser?.profileImage ||
+                      "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
+                    }
                     alt="Profile"
                   />
                 </NavLink>

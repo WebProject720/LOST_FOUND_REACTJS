@@ -13,7 +13,7 @@ const ShortPost = React.forwardRef(function ShortPost({ doc, ...rest }, ref) {
     even:bg-white even:bg-opacity-35 odd:bg-gray-600 odd:bg-opacity-35 text-white
     hover:border-white border-x-4 items-center hover:cursor-pointer
     laptop:w-3/5 hover:bg-sky-700 transition-all hover:translate-x-1
-    hover:scale-110 ease-in-out"
+    hover:scale-110 ease-in-out Max650:w-full"
     >
       <div className="size-10">
         <div className="profileImage">
@@ -24,7 +24,7 @@ const ShortPost = React.forwardRef(function ShortPost({ doc, ...rest }, ref) {
                 "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"
               }
               alt=""
-              className="size-10 transition-all object-cover ease-in-out rounded-full hover:scale-110 hover:ease-linear"
+              className="Max650:size-8 size-10 transition-all object-cover ease-in-out rounded-full hover:scale-110 hover:ease-linear"
             />
           </Link>
         </div>
@@ -36,7 +36,9 @@ const ShortPost = React.forwardRef(function ShortPost({ doc, ...rest }, ref) {
           </div>
           <div className="">
             <div>
-              <p className="Max650:text-xs">{new Date(doc.createdAt).toDateString()}</p>
+              <p className="Max650:text-xs">
+                {new Date(doc.createdAt).toDateString()}
+              </p>
             </div>
           </div>
         </div>
