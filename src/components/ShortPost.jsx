@@ -36,7 +36,7 @@ const ShortPost = React.forwardRef(function ShortPost({ doc, ...rest }, ref) {
           </div>
           <div className="">
             <div>
-              <p>{new Date(doc.createdAt).toDateString()}</p>
+              <p className="Max650:text-xs">{new Date(doc.createdAt).toDateString()}</p>
             </div>
           </div>
         </div>
