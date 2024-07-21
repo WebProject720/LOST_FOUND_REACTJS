@@ -67,7 +67,7 @@ const Home = () => {
 
       {post && post.map((e, i) => <ShortPost doc={e} key={i} />)}
       {post?.length == 0 && <NoPost />}
-      <div className="next flex flex-row items-center w-[90%] laptop:w-3/5">
+      <div className="next flex flex-row mt-4 items-center w-[90%] laptop:w-3/5">
         <div className="w-full flex justify-between">
           <Button disable={true} text="Previous"></Button>
           <Button disable={true} text="Next"></Button>
