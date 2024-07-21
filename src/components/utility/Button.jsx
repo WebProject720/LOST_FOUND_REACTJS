@@ -28,7 +28,7 @@ const Button = React.forwardRef(function Button(
             invalid:border-red-500 text-xl
              border-white text-blue-600 font-bold box-border ${buttonClass}
              flex flex-row flex-nowrap items-center align-middle justify-center
-             disabled:border-0 Max650:text-xs
+             disabled:border-0 Max650:text-xs disabled:text-white
              `}
         disabled={disable}
         ref={ref}
