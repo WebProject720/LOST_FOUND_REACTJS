@@ -6,8 +6,8 @@ const Button = React.forwardRef(function Button(
     text = "Enter",
     disable = false,
     addImage = false,
-    imageClass="",
-    buttonClass="",
+    imageClass = "",
+    buttonClass = "",
     ImageUrl = "",
     type = "",
     ...rest
@@ -23,7 +23,7 @@ const Button = React.forwardRef(function Button(
             focus:outline-none  border-2  autofill:bg-transparent
             placeholder-white placeholder-opacity-50
             focus:border-green-400
-            w-full py-2
+            w-full py-2 Max650:focus:border-white
             disabled:bg-slate-400 disabled:cursor-not-allowed 
             invalid:border-red-500 text-xl
              border-white text-blue-600 font-bold box-border ${buttonClass}

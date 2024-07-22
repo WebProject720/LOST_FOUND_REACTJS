@@ -56,13 +56,13 @@ const AuthLayout = () => {
   });
   return (
     <div
-      className="bg-blue-700 Max650:bg-white Max650:mt-10 min-h-screen  flex-col items-center justify-center gap-5
+      className="bg-blue-700 Max650:bg-white  min-h-screen  flex-col items-center justify-center gap-5
     grid grid-cols-1 laptop:grid-cols-2 justify-items-center content-center
     "
     >
       {showAlert && <ShowAlertMsg param={alertParams} />}
       <div
-        className=" flex container Max650:w-11/12 w-3/4 Max650:bg-blue-500 Max650:bg-opacity-80 bg-blue-800 rounded-md p-5
+        className=" flex container Max650:w-11/12 w-3/4 Max650:bg-blue-500 Max650:mt-10 Max650:bg-opacity-80 bg-blue-800 rounded-md p-5
        flex-col items-center justify-center gap-5
       "
       >
