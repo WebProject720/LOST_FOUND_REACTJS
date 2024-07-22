@@ -13,6 +13,7 @@ class usersClass {
         }
         return false;
     }
+    
     async login(email, password) {
         try {
             const response = await axios.post(`${config.users}/login`, { email, password }, { withCredentials: true });
