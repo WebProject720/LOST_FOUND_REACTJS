@@ -57,7 +57,7 @@ const AuthLayout = () => {
     >
       {showAlert && <ShowAlertMsg param={alertParams} />}
       <div
-        className=" flex container w-3/4 bg-blue-800 rounded-md p-5
+        className=" flex container Max650:w-11/12 w-3/4 bg-blue-800 rounded-md p-5
        flex-col items-center justify-center gap-5
       "
       >
@@ -68,7 +68,7 @@ const AuthLayout = () => {
             </Link>
           </div>
           <div>
-            <Link to={"/"} className={`text-white font-bold text-2xl`}>
+            <Link to={"/"} className={`text-white text-center  font-bold text-2xl`}>
               Lost & Found
             </Link>
           </div>
