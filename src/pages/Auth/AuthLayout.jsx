@@ -56,7 +56,7 @@ const AuthLayout = () => {
   });
   return (
     <div
-      className="bg-blue-700 Max650:bg-white min-h-screen  flex-col items-center justify-center gap-5
+      className="bg-blue-700 Max650:bg-white Max650:mt-10 min-h-screen  flex-col items-center justify-center gap-5
     grid grid-cols-1 laptop:grid-cols-2 justify-items-center content-center
     "
     >
