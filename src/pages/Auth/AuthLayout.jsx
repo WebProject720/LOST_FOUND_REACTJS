@@ -110,7 +110,6 @@ const AuthLayout = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
