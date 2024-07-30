@@ -124,8 +124,4 @@ We welcome contributions! Please follow these steps to contribute:
 
 ### License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Let me know if you need any further details or modifications!
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/WebProject720) file for more details.
