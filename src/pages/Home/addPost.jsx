@@ -66,7 +66,7 @@ export const AddPost = () => {
   };
 
   const onchange = (e) => {
-    setBody(e);
+    setBody(e.target.value);
   };
 
   const handleFile = (e) => {
