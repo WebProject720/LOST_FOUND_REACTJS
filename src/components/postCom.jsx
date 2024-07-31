@@ -15,7 +15,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
   }
   const { register, handleSubmit, reset } = useForm();
   const { subject, status, Image, body, owner, Reply } = doc;
-  console.log(body, ReactHtmlParser(body));
+  console.log(doc,body, ReactHtmlParser(body));
   const type = doc?.MailType?.toUpperCase();
   const updatedAt = new Date(doc?.updatedAt);
   const day = updatedAt.toLocaleDateString();
