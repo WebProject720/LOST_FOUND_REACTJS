@@ -65,10 +65,6 @@ export const AddPost = () => {
     }
   };
 
-  const onchange = (e) => {
-    setBody(e.target.value);
-  };
-
   const handleFile = (e) => {
     if (!e.target.files) return;
     setFile({
@@ -169,12 +165,13 @@ export const AddPost = () => {
               onEditorChange={onchange}
             ></Editor> */}
             <textarea
-              name=""
-              id=""
-              onEditorChange={onchange}
+              name="body"
+              id="body"
+              onEditorChange={(e) => setBody(e.target.value)}
               className="rounded-md bg-white text-black font-serif 
               outline-none p-3 w-full h-72 
               "
+              value={defaultValues || undefined}
            placeholder="Description here" ></textarea>
           </div>
           <div className="actions flex flex-col gap-1">
