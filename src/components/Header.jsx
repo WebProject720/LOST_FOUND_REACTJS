@@ -122,7 +122,7 @@ const Header = () => {
             <button
               onClick={searchEvent}
               type="submit"
-              className="bg-black  bg-opacity-90  p-1 px-5 rounded-r-full"
+              className="bg-gray-500 bg-opacity-90  p-1 px-5 rounded-r-full"
             >
               <img
                 className="size-10 Max650:size-6"

@@ -129,7 +129,7 @@ export const AddPost = () => {
               onChange={(e) => setSubject(e.target.value)}
             />
           </div>
-          <div className="min-w-[500px]">
+          <div className="">
             {/* <Editor
               apiKey={config.EditorKey}
               initialValue={defaultValues || undefined}
@@ -173,7 +173,7 @@ export const AddPost = () => {
               id=""
               onEditorChange={onchange}
               className="rounded-md bg-white text-black font-serif 
-              outline-none p-3 w-full h-72
+              outline-none p-3 w-full h-72 
               "
            placeholder="Description here" ></textarea>
           </div>
