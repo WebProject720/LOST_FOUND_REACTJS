@@ -5,7 +5,7 @@ const Logo = ({style="" }) => {
     <div className="">
       <div className="w-full">
         <img
-          className={`size-20 Max650:size-12 p-2 rounded-full ${style}`}
+          className={`size-10 Max650:size-8  rounded-full ${style}`}
           src="https://github.com/WebProject720/LOST_FOUND_REACTJS/blob/main/Assets/l--f-high-resolution-logo-white-transparent.png?raw=true"
           alt="Logo"
         />

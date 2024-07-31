@@ -65,7 +65,7 @@ const Header = () => {
     setSearch("");
   };
   return (
-    <div className="header bg-[#3a69e8] fixed w-full z-10 py-1 top-0">
+    <div className="header bg-[#050459]  fixed w-full z-10 py-1 top-0">
       <div
         className="header-container px-2 py-1   flex-row gap-1 justify-between items-center
        grid grid-cols-6 
@@ -79,7 +79,7 @@ const Header = () => {
         >
           <div className="logo ">
             <NavLink to={"/"}>
-              <Logo style="!p-0 !size-12" />
+              <Logo style="" />
             </NavLink>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Header = () => {
               />
               <button type="button" onClick={cancelSearchEvent}>
                 <img
-                  className="size-10 pr-1"
+                  className="size-10 Max650:size-6 pr-1"
                   src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/cancel-svgrepo-com.svg"
                   alt="CancelIcon"
                 />
@@ -122,7 +122,7 @@ const Header = () => {
               className="bg-black  bg-opacity-40  p-1 px-5 rounded-r-full"
             >
               <img
-                className="size-10"
+                className="size-10 Max650:size-6"
                 src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/search-svgrepo-com.svg"
                 alt="SearchIcon"
               />
@@ -140,25 +140,37 @@ const Header = () => {
             className="bg-transparent Min650:hidden  bg-opacity-40  p-1 px-3 rounded-r-full"
           >
             <img
-              className="size-10"
+              className="size-10 Max650:size-6"
               src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/search-svgrepo-com.svg"
               alt="SearchIcon"
             />
           </button>
           {!userLogged && (
             <div className="actions-btn flex flex-row gap-2 items-center">
-              <NavLink to="/Auth">
-                <Button text="Login"></Button>
+              <NavLink
+                to="/Auth"
+                className="bg-white p-2 rounded-md font-bold text-[#050459]
+                text-nowrap
+                "
+              >
+                <span>Login</span>
               </NavLink>
-              <NavLink to="/Auth/register">
-                <Button text="Get Started" />
+              <NavLink
+                to="/Auth/register"
+                className="bg-white p-2 rounded-md text-[#050459]
+                text-nowrap 
+                "
+              >
+                <span
+                className="font-bold text-nowrap"
+                >Get Started</span>
               </NavLink>
             </div>
           )}
           <NavLink to={"/"}>
             <img
               src="https://img.icons8.com/?size=100&id=41651&format=png&color=000000"
-              className="size-10"
+              className="size-10 Max650:size-6"
               alt=""
             />
           </NavLink>
@@ -168,14 +180,14 @@ const Header = () => {
                 className={`hover:bg-white p-1 rounded-full hover:bg-opacity-20`}
               >
                 <img
-                  className="size-10"
+                  className="size-10 Max650:size-6"
                   src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/notification-bell-svgrepo-com.svg"
                   alt="Notification"
                 />
               </NavLink>
               <NavLink to={"/addpost"}>
                 <img
-                  className="size-10"
+                  className="size-10 Max650:size-6"
                   src="https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/content-tag-add-icon-svgrepo-com.svg"
                   alt="Add Post"
                 />
@@ -184,7 +196,7 @@ const Header = () => {
               <div className="profile group">
                 <NavLink to={`/profile?email=${LoggedUser?.email}`}>
                   <img
-                    className="size-10 rounded-full object-cover"
+                    className="size-10 Max650:size-6 rounded-full object-cover"
                     src={
                       LoggedUser?.profileImage ||
                       "https://raw.githubusercontent.com/WebProject720/LOST_FOUND_REACTJS/1eda6f4abdafa0a1f63c0558ba5369bfba8d5fe5/Assets/user-profile.svg"

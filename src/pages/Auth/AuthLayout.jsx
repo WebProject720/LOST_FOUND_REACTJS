@@ -1,16 +1,12 @@
 import { Outlet, useNavigate } from "react-router";
 import { useState } from "react";
 import { useGoogleLogin } from "@react-oauth/google";
-import {
-  Logo,
-  Button,
-  ShowAlertMsg,
-  Footer,
-} from "../../components/components";
+import { Logo, Button, ShowAlertMsg } from "../../components/components";
 import { GoogleAuth } from "../../APIs/Google.Auth";
 import { useDispatch } from "react-redux";
 import { login } from "../../ReduxStore/StoreComponents/LoggedUser";
 import { Link } from "react-router-dom";
+import config from "../../../config";
 
 const AuthLayout = () => {
   const dispatch = useDispatch();
@@ -53,13 +49,12 @@ const AuthLayout = () => {
     onError: (error) => {
       setAlertFun(false, false, "Try again");
     },
-    clientId:
-      "844090305507-ddu676samglpsr07dv9qqn65n77rvbgo.apps.googleusercontent.com",
-    redirectUri: "https://lostfound720.netlify.app/",
+    clientId: config.googleClientID,
+    redirectUri: "http://localhost:5173/",
   });
   return (
     <div
-      className="bg-blue-700 Max650:bg-white  min-h-screen  flex-col items-center justify-center gap-5
+      className="bg-blue-700   min-h-screen  flex-col items-center justify-center gap-5
     grid grid-cols-1 laptop:grid-cols-2 justify-items-center content-center 
     "
     >
