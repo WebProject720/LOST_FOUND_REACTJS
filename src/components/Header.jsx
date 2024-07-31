@@ -65,7 +65,10 @@ const Header = () => {
     setSearch("");
   };
   return (
-    <div className="header bg-[#050459]  fixed w-full z-10 py-1 top-0">
+    <div className="header bg-[#050459]  fixed w-full z-10 py-1 top-0
+    bg-gradient-to-r from-[#9d3232] to-[#1c37b9]
+    "
+    >
       <div
         className="header-container px-2 py-1   flex-row gap-1 justify-between items-center
        grid grid-cols-6 
@@ -119,7 +122,7 @@ const Header = () => {
             <button
               onClick={searchEvent}
               type="submit"
-              className="bg-black  bg-opacity-40  p-1 px-5 rounded-r-full"
+              className="bg-black  bg-opacity-90  p-1 px-5 rounded-r-full"
             >
               <img
                 className="size-10 Max650:size-6"
@@ -149,7 +152,7 @@ const Header = () => {
             <div className="actions-btn flex flex-row gap-2 items-center">
               <NavLink
                 to="/Auth"
-                className="bg-white p-2 rounded-md font-bold text-[#050459]
+                className="bg-white p-1 rounded-sm font-bold text-[#050459]
                 text-nowrap
                 "
               >
@@ -157,7 +160,7 @@ const Header = () => {
               </NavLink>
               <NavLink
                 to="/Auth/register"
-                className="bg-white p-2 rounded-md text-[#050459]
+                className="bg-white p-1 rounded-sm text-[#050459]
                 text-nowrap 
                 "
               >
@@ -167,13 +170,7 @@ const Header = () => {
               </NavLink>
             </div>
           )}
-          <NavLink to={"/"}>
-            <img
-              src="https://img.icons8.com/?size=100&id=41651&format=png&color=000000"
-              className="size-10 Max650:size-6"
-              alt=""
-            />
-          </NavLink>
+          
           {userLogged && (
             <div className="actions-btn flex flex-row gap-3 items-center">
               <NavLink

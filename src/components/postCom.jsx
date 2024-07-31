@@ -95,7 +95,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
         {showAlert && <ShowAlertMsg param={alertParams} />}
         <div className="postContainer text-white flex gap-2 flex-col justify-center items-center laptop:w-3/5">
           <div className="flex w-full flex-col">
-            <div className="owner flex justify-between flex-wrap p-2 my-2 items-center">
+            <div className="owner flex justify-between flex-wrap gap-2 p-2 my-2 items-center">
               <div className="flex flex-row items-center gap-2">
                 <div className="image">
                   <Link to={`/profile?email=${owner.email}`}>

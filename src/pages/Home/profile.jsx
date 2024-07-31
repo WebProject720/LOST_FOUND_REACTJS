@@ -149,6 +149,7 @@ export const Profile = () => {
                     id="file"
                     accept=".jpg, .png , .jpeg"
                     onChange={updateImage}
+                    disabled={true}
                   />
                   <label
                     htmlFor="file"
@@ -156,6 +157,7 @@ export const Profile = () => {
                   rounded-md font-bold text-xl
                   flex justify-center items-center py-2
                   "
+                  disabled={true}
                   >
                     Update Profile Image
                   </label>

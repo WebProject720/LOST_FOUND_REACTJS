@@ -172,8 +172,10 @@ export const AddPost = () => {
               name=""
               id=""
               onEditorChange={onchange}
-              className="rounded-md bg-white text-black font-serif w-auto h-auto"
-            ></textarea>
+              className="rounded-md bg-white text-black font-serif 
+              outline-none p-3 w-full h-72
+              "
+           placeholder="Description here" ></textarea>
           </div>
           <div className="actions flex flex-col gap-1">
             <div className="inputs w-full h-full flex flex-row gap-2">
@@ -192,9 +194,10 @@ export const AddPost = () => {
               <input
                 className="block w-full text-sm p-2 text-white border-0 border-gray-300 rounded-md cursor-pointer bg-white dark:text-gray-800 focus:outline-none dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 outline-none 
                 file:rounded-md file:border-opacity-50 file:focus:border-gray-400 file:p-2 file:border-gray-900 file:outline-none file:bg-white
-                min-h-10 bg-opacity-50 
+                min-h-10 bg-opacity-50 disabled:bg-gray-400
                 "
                 type="file"
+                disabled={true}
                 name="file"
                 id="file"
                 accept=".jpg, .png , .jpeg"
