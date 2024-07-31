@@ -50,18 +50,18 @@ const AuthLayout = () => {
       setAlertFun(false, false, "Try again");
     },
     clientId: config.googleClientID,
-    redirectUri: "http://localhost:5173/",
+    redirectUri: "https://lostfound720.netlify.app/",
   });
   return (
     <div
-      className="bg-blue-700   min-h-screen  flex-col items-center justify-center gap-5
+      className="   min-h-screen  flex-col items-center justify-center gap-5
     grid grid-cols-1 laptop:grid-cols-2 justify-items-center content-center 
     "
     >
       {showAlert && <ShowAlertMsg param={alertParams} />}
       <div
-        className=" flex container Max650:w-11/12 w-3/4 Max650:bg-blue-500  Max650:bg-opacity-80 bg-blue-800 rounded-md p-5
-       flex-col items-center justify-center gap-5 mt-16
+        className=" flex container Max650:w-11/12 w-3/4 bg-[#1d1d85] rounded-md p-5
+       flex-col items-center justify-center gap-5 mt-8
       "
       >
         <div className="flex flex-col flex-nowrap justify-center items-center">
