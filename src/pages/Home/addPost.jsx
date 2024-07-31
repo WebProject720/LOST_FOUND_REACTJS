@@ -130,7 +130,7 @@ export const AddPost = () => {
             />
           </div>
           <div className="min-w-[500px]">
-            <Editor
+            {/* <Editor
               apiKey={config.EditorKey}
               initialValue={defaultValues || undefined}
               init={{
@@ -167,7 +167,7 @@ export const AddPost = () => {
                   "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
               }}
               onEditorChange={onchange}
-            ></Editor>
+            ></Editor> */}
             <textarea
               name=""
               id=""
