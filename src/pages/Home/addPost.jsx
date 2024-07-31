@@ -171,7 +171,7 @@ export const AddPost = () => {
               className="rounded-md bg-white text-black font-serif 
               outline-none p-3 w-full h-72 
               "
-              value={defaultValues || undefined}
+              defaultValue={defaultValues || undefined}
            placeholder="Description here" ></textarea>
           </div>
           <div className="actions flex flex-col gap-1">
