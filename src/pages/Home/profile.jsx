@@ -8,7 +8,7 @@ import {
   ShowAlertMsg,
   NoPost,
 } from "../../components/components";
-import { login } from "../../ReduxStore/StoreComponents/LoggedUser";
+import { login,logout } from "../../ReduxStore/StoreComponents/LoggedUser";
 
 export const Profile = () => {
   const location = useLocation();
@@ -76,6 +76,16 @@ export const Profile = () => {
         setAlert(false, false, "Something Wrong");
       });
   };
+  const LogOut = async () => {
+    setAlertFun(true);
+    const response = await userApi.logout();
+    if (response) {
+      dispatch(logout());
+      setAlertFun(false, true, "Logout Successfully");
+    } else {
+      setAlertFun(false, false, response?.message || "Try again");
+    }
+  };
   return (
     <div className="w-full flex flex-col flex-nowrap justify-center items-cente">
       {showAlert && <ShowAlertMsg param={alertParams} />}
@@ -139,7 +149,7 @@ export const Profile = () => {
             <div className="action flex gap-2 w-full">
               {currentUser && LoggedUser?.email == currentUser.email && (
                 <div className="grid grid-flow-col gap-2 w-full flex-wrap">
-                  <input
+                  {/* <input
                     className="w-full text-sm p-2 py-4 text-white border-0 border-gray-300 rounded-md cursor-pointer bg-white dark:text-gray-800 focus:outline-none dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 outline-none 
                 file:rounded-md file:border-opacity-50 file:focus:border-gray-400 file:p-1 file:border-gray-900 file:outline-none file:bg-white
                 min-h-10 bg-opacity-50  hidden
@@ -160,10 +170,14 @@ export const Profile = () => {
                   disabled={true}
                   >
                     Update Profile Image
-                  </label>
+                  </label> */}
                   <Button
                     text="Delete Account"
                     onClick={(e) => navigate("/Auth?q=0")}
+                  ></Button>
+                  <Button
+                    text="Logout"
+                    onClick={LogOut}
                   ></Button>
                 </div>
               )}

@@ -7,7 +7,6 @@ import postApi from "../APIs/mails.api";
 import { updatePost } from "../ReduxStore/StoreComponents/PostStore";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-import { deletePostfromUser } from "../ReduxStore/StoreComponents/LoggedUser";
 
 export const Post = React.forwardRef(function Post({ doc }, ref) {
   const navigate = useNavigate();
@@ -16,6 +15,7 @@ export const Post = React.forwardRef(function Post({ doc }, ref) {
   }
   const { register, handleSubmit, reset } = useForm();
   const { subject, status, Image, body, owner, Reply } = doc;
+  console.log(body, ReactHtmlParser(body));
   const type = doc?.MailType?.toUpperCase();
   const updatedAt = new Date(doc?.updatedAt);
   const day = updatedAt.toLocaleDateString();

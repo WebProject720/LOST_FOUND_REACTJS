@@ -204,7 +204,9 @@ const Header = () => {
                 <div
                   className={`hidden ShowBox absolute  border-2 min-h-8 min-w-40 
                 right-6
-                 bg-blue-400 rounded-md group-hover:flex flex-col`}
+                 bg-blue-400 rounded-md group-hover:flex flex-col
+                 Max650:hidden Max650:group-hover:hidden
+                 `}
                 >
                   <NavLink
                     to={`/profile?email=${LoggedUser?.email}`}
