@@ -168,6 +168,12 @@ export const AddPost = () => {
               }}
               onEditorChange={onchange}
             ></Editor>
+            <textarea
+              name=""
+              id=""
+              onEditorChange={onchange}
+              className="rounded-md bg-white text-black font-serif w-auto h-auto"
+            ></textarea>
           </div>
           <div className="actions flex flex-col gap-1">
             <div className="inputs w-full h-full flex flex-row gap-2">
