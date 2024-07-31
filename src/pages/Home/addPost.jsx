@@ -126,48 +126,10 @@ export const AddPost = () => {
             />
           </div>
           <div className="">
-            {/* <Editor
-              apiKey={config.EditorKey}
-              initialValue={defaultValues || undefined}
-              init={{
-                initialValue: "",
-                menubar: true,
-                placeholder: "Write Description here...",
-                height: 300,
-                automatic_uploads: true,
-                image_title: true,
-                plugins: [
-                  // "image",
-                  "advlist",
-                  // "autolink",
-                  "lists",
-                  // "link",
-                  "charmap",
-                  // "preview",
-                  "anchor",
-                  "searchreplace",
-                  "visualblocks",
-                  // "code",
-                  // "fullscreen",
-                  "insertdatetime",
-                  // "media",
-                  "table",
-                  "code",
-                  // "help",
-                  "wordcount",
-                  "anchor",
-                ],
-                toolbar:
-                  "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
-                content_style:
-                  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
-              }}
-              onEditorChange={onchange}
-            ></Editor> */}
             <textarea
               name="body"
               id="body"
-              onEditorChange={(e) => setBody(e.target.value)}
+              onChange={(e) => setBody(e.target.value)}
               className="rounded-md bg-white text-black font-serif 
               outline-none p-3 w-full h-72 
               "
